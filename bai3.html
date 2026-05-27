@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <title>Bài viết</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .featured-thumb {
+            width: 70px;
+            height: 70px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        .featured-title {
+            font-size: 0.88rem;
+            font-weight: bold;
+            color: #212529;
+        }
+        .featured-desc {
+            font-size: 0.78rem;
+            color: #6c757d;
+            line-height: 1.4;
+        }
+        .post-card img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+        }
+        .post-title {
+            font-size: 0.92rem;
+            font-weight: bold;
+            color: #212529;
+        }
+        .post-desc {
+            font-size: 0.8rem;
+            color: #6c757d;
+            line-height: 1.4;
+        }
+        footer {
+            background-color: #212529;
+            color: #ffffff;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm navbar-light bg-light shadow-sm mb-3">
+    <div class="container">
+        <a class="navbar-brand" href="/bai2.html">
+            <img src="/images/logo-energy-pilates.png" alt="Logo" style="width: 150px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item"><a class="nav-link active text-success" href="bai3.html"><i class="fa-solid fa-list"></i> Bài viết</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-film"></i> Video</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-circle-info"></i> Giới thiệu</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-envelope"></i> Liên hệ</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                        <i class="fa-solid fa-user"></i> Tài khoản
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/login.html">Đăng nhập</a></li>
+                        <li><a class="dropdown-item" href="#">Quên mật khẩu</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Đăng ký thành viên</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="navbar-nav d-flex">
+                <li class="nav-item"><a class="nav-link" href="#">Tiếng Việt</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Tiếng Anh</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container mb-4">
+    <div id="indexCarousel" class="carousel slide shadow-sm rounded overflow-hidden" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#indexCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#indexCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#indexCarousel" data-bs-slide-to="2"></button>
+        </div>
+            <div class="carousel-inner">
+                <a class="carousel-item active" href="/bai3.html">
+                    <img src="/images/banner1.jpg" class="d-block w-100" alt="Slide 1">
+                </a>
+                <a class="carousel-item" href="/bai4.html">
+                    <img src="/images/banner2.jpg" class="d-block w-100" alt="Slide 2">
+                </a>
+                <a class="carousel-item" href="/bai3.html">
+                    <img src="/images/banner3.jpg" class="d-block w-100" alt="Slide 3">
+                </a>
+            </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#indexCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#indexCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        
+        <div class="col-sm-4">
+            <h4 class="text-info mb-3">Chuyên mục</h4>
+            <ul class="list-group shadow-sm mb-4">
+                <li class="list-group-item active bg-info border-info d-flex justify-content-between align-items-center">
+                    <a href="#" class="text-white text-decoration-none small">Chế độ tập</a>
+                    <span class="badge bg-primary rounded-pill">12</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <a href="#" class="text-dark text-decoration-none small">Chế độ dinh dưỡng</a>
+                    <span class="badge bg-primary rounded-pill">15</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <a href="#" class="text-dark text-decoration-none small">Cẩm nang cuộc sống</a>
+                    <span class="badge bg-primary rounded-pill">99</span>
+                </li>
+            </ul>
+
+            <h4 class="text-info mb-3">Bài viết nổi bật</h4>
+            <div class="card border-light shadow-sm p-3 mb-4 bg-white">
+                <div class="d-flex mb-3 align-items-start">
+                    <img src="/images/spinach_300x300.jpg" class="featured-thumb me-3" alt="Thumb">
+                    <div>
+                        <a href="#" class="text-decoration-none featured-title d-block mb-1">Lợi ích khi ăn rau mỗi ngày</a>
+                        <p class="featured-desc mb-0">Tiêu thụ rau xanh hàng ngày sẽ giúp tăng cường thị lực, kiểm soát cân nặng, ngăn ngừa ung thư...</p>
+                    </div>
+                </div>
+                <div class="d-flex mb-3 align-items-start">
+                    <img src="/images/orange_300x300.jpg" class="featured-thumb me-3" alt="Thumb">
+                    <div>
+                        <a href="#" class="text-decoration-none featured-title d-block mb-1">9 tác dụng tuyệt vời của quả cam</a>
+                        <p class="featured-desc mb-0">Cam tự hào về khả năng chống lão hóa mạnh mẽ nhờ hàm lượng chất chống oxy hóa cao...</p>
+                    </div>
+                </div>
+                <div class="d-flex align-items-start">
+                    <img src="/images/sesameoil_300x300.jpg" class="featured-thumb me-3" alt="Thumb">
+                    <div>
+                        <a href="#" class="text-decoration-none featured-title d-block mb-1">10 công dụng bất ngờ từ dầu dừa</a>
+                        <p class="featured-desc mb-0">Dầu dừa như một loại kem dưỡng ẩm tự nhiên cho cơ thể, giúp việc sản xuất collagen trong các tế báo...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-sm-8">
+            <h4 class="text-info mb-3">Tất cả bài viết</h4>
+            
+            <div class="tab-content">
+                
+                <div id="page-1" class="tab-pane active fade show">
+                    <div class="row row-cols-1 row-cols-md-2 g-3 mb-4">
+                        <div class="col">
+                            <a href="bai4.html" class="text-decoration-none">
+                                <div class="card h-100 p-2 border-0 shadow-sm bg-white post-card">
+                                    <div class="card-body p-1">
+                                        <h6 class="post-title text-dark">Phương pháp tập Pilates giúp phục hồi chấn thương cột sống <span class="text-muted small fw-normal"><i class="fa-solid fa-comment"></i> 16</span></h6>
+                                    </div>
+                                    <img src="/images/tap-piltes.jpg" class="rounded my-2" alt="Bài viết 1">
+                                    <div class="card-body p-1">
+                                        <p class="post-desc mb-0 text-secondary">Ngoài việc giúp duy trì vóc dáng, cải thiện sự linh hoạt, dẻo dai cho người tập, Pilates còn có khả năng trị đau lưng, là giải pháp hữu hiệu để phục hồi chấn thương cột sống.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 p-2 border-0 shadow-sm bg-white post-card">
+                                <div class="card-body p-1">
+                                    <h6 class="post-title">Đây là những gì 1 giờ Tập Pilates có thể làm cho cơ thể của bạn <span class="text-muted small fw-normal"><i class="fa-solid fa-comment"></i> 8</span></h6>
+                                </div>
+                                <img src="/images/tap-pilates1.jpg" class="rounded my-2" alt="Bài viết 2">
+                                <div class="card-body p-1">
+                                    <p class="post-desc mb-0">Được thiết kế để xây dựng cơ bắp săn chắc, khỏe mạnh hơn, bài tập này đã trở thành một cái tên quen thuộc nhờ có rất nhiều người nổi tiếng theo dõi.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 p-2 border-0 shadow-sm bg-white post-card">
+                                <div class="card-body p-1">
+                                    <h6 class="post-title">Tập Pilates có thể cải thiện sức khỏe tim mạch của bạn <span class="text-muted small fw-normal"><i class="fa-solid fa-comment"></i> 5</span></h6>
+                                </div>
+                                <img src="/images/tim-mach.jpg" class="rounded my-2" alt="Bài viết 3">
+                                <div class="card-body p-1">
+                                    <p class="post-desc mb-0">Tập Pilates không chỉ giúp bạn có một cơ thể khỏe mạnh và linh hoạt mà còn có nhiều lợi ích cho sức khỏe tim mạch. Bài viết này sẽ tìm hiểu sâu hơn về tác động tích cực...</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 p-2 border-0 shadow-sm bg-white post-card">
+                                <div class="card-body p-1">
+                                    <h6 class="post-title">EAT CLEAN: Nên Và Không Nên Ăn Thực Phẩm Nào? <span class="text-muted small fw-normal"><i class="fa-solid fa-comment"></i> 3</span></h6>
+                                </div>
+                                <img src="/images/eat-clean.png" class="rounded my-2" alt="Bài viết 4">
+                                <div class="card-body p-1">
+                                    <p class="post-desc mb-0">Chúng ta luôn chú trọng lựa chọn thực phẩm sạch và duy trì lối sống lành mạnh. Vậy chế độ ăn Eat clean nên và không nên ăn gì trong thực đơn hàng ngày để cân bằng tháp dinh dưỡng?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="page-2" class="tab-pane fade">
+                    <div class="row row-cols-1 row-cols-md-2 g-3 mb-4">
+                        <div class="col">
+                            <div class="card h-100 p-2 border-0 shadow-sm bg-white post-card">
+                                <div class="card-body p-1"><h6 class="post-title">Bài viết 5</h6></div>
+                                <img src="/images/video1.jpg" class="rounded my-2" alt="Bài 5">
+                                <div class="card-body p-1"><p class="post-desc mb-0">Nội dung...</p></div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 p-2 border-0 shadow-sm bg-white post-card">
+                                <div class="card-body p-1"><h6 class="post-title">Bài viết 6</h6></div>
+                                <img src="/images/video2.jpg" class="rounded my-2" alt="Bài 6">
+                                <div class="card-body p-1"><p class="post-desc mb-0">Nội dung...</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="page-3" class="tab-pane fade">
+                    <div class="row row-cols-1 row-cols-md-2 g-3 mb-4">
+                        <div class="col">
+                            <div class="card h-100 p-2 border-0 shadow-sm bg-white post-card">
+                                <div class="card-body p-1"><h6 class="post-title">Bài viết 7</h6></div>
+                                <img src="/images/video3.jpg" class="rounded my-2" alt="Bài 7">
+                                <div class="card-body p-1"><p class="post-desc mb-0">Nội dung...</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div> 
+            
+            <nav aria-label="Page navigation">
+                <ul class="pagination pagination-sm justify-content-center nav nav-pills" id="custom-pagination" role="tablist">
+                    
+                    <li class="page-item" id="prev-page-item">
+                        <button class="page-link disabled" id="prev-page-btn" type="button" disabled>
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </button>
+                    </li>
+                    
+                    <li class="page-item">
+                        <button class="page-link active" data-bs-toggle="pill" data-bs-target="#page-1" type="button">1</button>
+                    </li>
+                    
+                    <li class="page-item">
+                        <button class="page-link" data-bs-toggle="pill" data-bs-target="#page-2" type="button">2</button>
+                    </li>
+                    
+                    <li class="page-item">
+                        <button class="page-link" data-bs-toggle="pill" data-bs-target="#page-3" type="button">3</button>
+                    </li>
+                    
+                    <li class="page-item" id="next-page-item">
+                        <button class="page-link" id="next-page-btn" type="button">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </li>
+                    
+                </ul>
+            </nav>
+
+        </div> 
+    </div> 
+</div> 
+
+<footer class="text-center">
+    <div class="container">
+        <p class="mb-0 small">&copy; Copyright by FPT Polytechnic</p>
+    </div>
+</footer>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const pageButtons = Array.from(document.querySelectorAll('#custom-pagination .page-link[data-bs-toggle="pill"]'));
+        const prevBtn = document.getElementById('prev-page-btn');
+        const nextBtn = document.getElementById('next-page-btn');
+
+        function getActiveIndex() {
+            return pageButtons.findIndex(btn => btn.classList.contains('active'));
+        }
+
+        // Hàm kiểm tra trạng thái để ẩn/hiện hoặc disable nút mũi tên
+        function updateArrowStatus() {
+            let currentIndex = getActiveIndex();
+
+            // Xử lý nút Lùi (Trái)
+            if (currentIndex === 0) {
+                prevBtn.classList.add('disabled');
+                prevBtn.setAttribute('disabled', 'true');
+            } else {
+                prevBtn.classList.remove('disabled');
+                prevBtn.removeAttribute('disabled');
+            }
+
+            // Xử lý nút Tiến (Phải)
+            if (currentIndex === pageButtons.length - 1) {
+                nextBtn.classList.add('disabled');
+                nextBtn.setAttribute('disabled', 'true');
+            } else {
+                nextBtn.classList.remove('disabled');
+                nextBtn.removeAttribute('disabled');
+            }
+        }
+
+        // Lắng nghe sự kiện chuyển tab của Bootstrap để cập nhật nút mũi tên (áp dụng cả khi bấm số)
+        pageButtons.forEach(btn => {
+            btn.addEventListener('shown.bs.tab', function () {
+                updateArrowStatus();
+            });
+        });
+
+        // Xử lý khi bấm nút mũi tên Trái (Lùi)
+        prevBtn.addEventListener('click', function() {
+            let currentIndex = getActiveIndex();
+            if (currentIndex > 0) {
+                let prevButton = pageButtons[currentIndex - 1];
+                bootstrap.Tab.getInstance(prevButton)?.show() || new bootstrap.Tab(prevButton).show();
+            }
+        });
+
+        // Xử lý khi bấm nút mũi tên Phải (Tiến)
+        nextBtn.addEventListener('click', function() {
+            let currentIndex = getActiveIndex();
+            if (currentIndex < pageButtons.length - 1) {
+                let nextButton = pageButtons[currentIndex + 1];
+                bootstrap.Tab.getInstance(nextButton)?.show() || new bootstrap.Tab(nextButton).show();
+            }
+        });
+
+        // Chạy kiểm tra lần đầu tiên khi vừa tải trang
+        updateArrowStatus();
+    });
+</script>
+</body>
+</html>

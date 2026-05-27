@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <title>Kết hợp Form và Tab</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .tab-wrapper {
+            max-width: 650px;
+            margin: 40px auto;
+            background: #ffffff;
+            padding: 25px;
+            border: 1px solid #dee2e6;
+            border-radius: 6px;
+        }
+
+        /* Style cho giống cái hộp viền xám trong đề bài */
+        .form-border-container {
+            border: 1px solid #dee2e6;
+            border-top: none;
+            /* Bỏ viền trên để nối liền mạch với thanh Tab */
+            padding: 25px;
+            border-radius: 0 0 6px 6px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="tab-wrapper shadow-sm">
+
+            <ul class="nav nav-tabs" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active fw-bold" data-bs-toggle="tab" href="#register">Đăng ký</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-bold" data-bs-toggle="tab" href="#login">Đăng nhập</a>
+                </li>
+            </ul>
+
+            <div class="tab-content form-border-container">
+
+                <div id="register" class="tab-pane active">
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label text-secondary small fw-bold">Họ và Tên</label>
+                            <input type="text" class="form-control form-control-sm" placeholder="Nhập họ và tên">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label text-secondary small fw-bold">Email</label>
+                            <input type="email" class="form-control form-control-sm" placeholder="Nhập email">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label text-secondary small fw-bold">Số Điện Thoại</label>
+                            <input type="tel" class="form-control form-control-sm" placeholder="Nhập số điện thoại">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label text-secondary small fw-bold">Mật Khẩu</label>
+                            <input type="password" class="form-control form-control-sm" placeholder="Nhập mật khẩu">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label text-secondary small fw-bold">Xác Nhận Mật Khẩu</label>
+                            <input type="password" class="form-control form-control-sm" placeholder="Xác nhận mật khẩu">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label text-secondary small fw-bold d-block">Giới Tính:</label>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="gioitinh" id="nam" checked>
+                                <label class="form-check-label small" for="nam">Nam</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="gioitinh" id="nu">
+                                <label class="form-check-label small" for="nu">Nữ</label>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label text-secondary small fw-bold">Ngôn Ngữ</label>
+                            <select class="form-select form-select-sm">
+                                <option selected>Tiếng Việt</option>
+                                <option value="en">Tiếng Anh</option>
+                            </select>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="dieukhuan">
+                            <label class="form-check-label small text-secondary" for="dieukhuan">Tôi đồng ý với các điều
+                                khoản và điều kiện</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-sm px-3">Đăng Ký</button>
+                    </form>
+                </div>
+
+                <div id="login" class="tab-pane fade">
+                    <h3 class="mb-3" style="font-size: 1.5rem; font-weight: 500;">Form Đăng nhập</h3>
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label text-secondary small fw-bold">Email</label>
+                            <input type="email" class="form-control form-control-sm" placeholder="Nhập email">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label text-secondary small fw-bold">Mật Khẩu</label>
+                            <input type="password" class="form-control form-control-sm" placeholder="Nhập mật khẩu">
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-sm px-3">Đăng Nhập</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
